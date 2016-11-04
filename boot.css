@@ -1,0 +1,48 @@
+
+.left_pane{
+	background-color: #d2e0cb;
+	height: 100vh;
+	text-align: center;
+	padding-bottom: 10px;
+
+}
+
+li{
+	margin: 10px;
+	color: #09080c;
+}
+
+.left_pane h2{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.visited_city{
+	color: green !important;
+}
+.selected_city{
+	color: red !important;
+}
+
+input[type=text] {
+	width: 70%;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+
+/*input[type=text]:focus {*/
+	/*width: 70%;*/
+/*}*/
+.sform{
+	margin-top: 10px;
+	margin-left: 10px;
+}
