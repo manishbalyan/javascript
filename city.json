@@ -3,31 +3,51 @@
       {
         "id": "1",
         "name": "Delhi",
-        "image": "images/1.jpg"
+        "image": "images/1.jpg",
+        "area":[{
+          "area1": "Saket",
+          "area2": "Aiims"
+        }]
 
       },
       {
         "id": "2",
         "name": "Mumbai",
-        "image": "images/2.jpg"
+        "image": "images/2.jpg",
+        "area":[{
+          "area1": "central",
+          "area2": "thane"
+        }]
 
       },
       {
         "id": "3",
         "name": "Pune",
-        "image": "images/3.jpg"
+        "image": "images/3.jpg",
+        "area":[{
+          "area1": "magarpatta",
+          "area2": "mundva"
+        }]
 
       },
       {
         "id": "4",
         "name": "Gurgaon",
-        "image": "images/4.jpg"
+        "image": "images/4.jpg",
+        "area":[{
+          "area1": "Sector4",
+          "area2": "Cyber City"
+        }]
 
       },
       {
         "id": "5",
         "name": "Bengaluru",
-        "image": "images/5.jpg"
+        "image": "images/5.jpg",
+        "area":[{
+          "area1": "Saket",
+          "area2": "Aiims"
+        }]
 
       }
     ]

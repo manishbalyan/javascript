@@ -18,6 +18,7 @@ $("li").click(function(){
 		$(".visited").append("<h3>"+uniqueVisitedCity[i]+"</h3>");
 	}
 })
+
 $(".visited").css("color","blue");
 
 
@@ -32,8 +33,14 @@ $('.cityName').keyup(function(e){
 			data = data.city;
 			$.each(data, function(i,val) {
 				if( val.name == searchvalue){
-								cityId = val.id;
-							$(".right_pane").empty().append("<img src=\"images/"+cityId+".jpg\">");
+								var cityId = val.id;
+								var areasObj =JSON.stringify(val.area) ;
+								console.log(areasObj);
+
+					$(".right_pane").empty().append("<img src=\"images/"+cityId+".jpg\">");
+							for(var i = 0 ;i<=areasObj.length;i++) {
+								$(".area").append("<button>" + areasObj[i]+ "</button>");
+							}
 						}
 				});
 
