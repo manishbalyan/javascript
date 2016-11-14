@@ -1,4 +1,5 @@
 var visitedCity = Array();
+// var cityImage = Array();
 
 $("li").click(function(){
     $('li').each(function(){
@@ -11,12 +12,25 @@ $("li").click(function(){
 	var cityId = $(this).attr("img-id");
 	var city = $(this).text();
 	visitedCity.push(city);
+	cityImage.push(cityId);
 	var uniqueVisitedCity = $.unique(visitedCity);
+	// var uniqueImage = $.unique(cityImage);
 	$(".right_pane").empty().append("<img src=\"images/"+cityId+".jpg\">");
 	$(".visited").empty();
 	for(i=0;i<uniqueVisitedCity.length;i++){
+
 		$(".visited").append("<h3>"+uniqueVisitedCity[i]+"</h3>");
 	}
+
+	// for(i=0;i<uniqueImage.length;i++){
+	// 		console.log(uniqueImage,'unique');
+	// 		$(".visitImage").append("<img src=\"images/"+uniqueImage[i]+".jpg\">");
+	// 	}
+
+})
+
+setInterval(function () {
+	$(".visitImage").next();
 })
 
 $(".visited").css("color","blue");
@@ -48,4 +62,39 @@ $('.cityName').keyup(function(e){
 	});
 
 })
+
+function testfun(man) {
+	console.log(this + "says hello" + " " + man);
+
+}
+window.onload=testfun("man");
+
+$('#myForm').submit(function (e) {
+	e.preventDefault();
+	var value = $('.comment').val();
+	$('.comments').empty().append("<ul><li>"+value+"</li></li></ul>");
+})
+
+$(document).ready(function () {
+	var imageArray = Array();
+
+	for(var i=1;i<6;i++){
+		imageArray.push("images/"+i+".jpg");
+	}
+	console.log(imageArray);
+	var slide_items = setInterval(function () {
+		slideImage()
+	},3000);
+
+	function slideImage() {
+
+
+	}
+})
+
+
+
+
+
+
 
