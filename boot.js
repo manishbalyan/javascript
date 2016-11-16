@@ -81,13 +81,19 @@ $(document).ready(function () {
 	for(var i=1;i<6;i++){
 		imageArray.push("images/"+i+".jpg");
 	}
-	console.log(imageArray);
+	// console.log(imageArray);
+	var imgc =-1;
 	var slide_items = setInterval(function () {
-		slideImage()
+		imgc++;
+		slideImage(imgc);
+		if (imageArray.length==imgc+1){
+			imgc=-1;
+		}
 	},3000);
 
-	function slideImage() {
+	function slideImage(imgc) {
 
+			$(".slideImages").empty().append("<img src= "+imageArray[imgc]+" >")
 
 	}
 })
